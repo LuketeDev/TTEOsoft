@@ -277,7 +277,7 @@ h6 {
   .navmenu a:focus {
     color: var(--nav-color);
     padding: 20px 15px;
-    margin-left: 2px;
+    margin-left: 0px;
     font-size: 16px;
     font-family: var(--nav-font);
     font-weight: 400;
@@ -671,7 +671,7 @@ h6 {
   padding: 6px 8px;
   position: relative;
   border-radius: 0;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 60%);
   display: flex;
   background-color: var(--background-color);
   transition: 0.3s;
@@ -855,12 +855,14 @@ section,
   }
 }
 
+
 /*--------------------------------------------------------------
 # Global Section Titles
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
   padding: 30px 0;
+  max-width: 66%;
   margin-bottom: 30px;
   position: relative;
 }
@@ -1054,7 +1056,7 @@ section,
 .cards .card span {
   display: block;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 600;
   color: var(--accent-color);
 }
 
@@ -1120,6 +1122,56 @@ section,
   margin-bottom: 20px;
   transition: 0.3s;
   transform-style: preserve-3d;
+}
+
+.services .service-item .card-image-icon {
+  width: 56px;
+  height: 56px
+}
+
+.services .service-item:hover #servico-1 {
+  content: url("../img/tteo/software_roxo.png");
+}
+
+.services .service-item #servico-2 {
+  width: 44px;
+  height: 44px;
+}
+
+.services .service-item:hover #servico-2 {
+  content: url("../img/tteo/phone_roxo.png");
+}
+
+.services .service-item #servico-3 {
+  width: 44px;
+  height: 44px;
+}
+
+.services .service-item:hover #servico-3 {
+
+  content: url("../img/tteo/refactoring_roxo.png");
+}
+
+.services .service-item:hover #servico-4 {
+  content: url("../img/tteo/suporte_roxo.png");
+}
+
+.services .service-item #servico-5 {
+  width: 44px;
+  height: 44px;
+}
+
+.services .service-item:hover #servico-5 {
+  content: url("../img/tteo/seo_roxo.png");
+}
+
+.services .service-item #servico-6 {
+  width: 44px;
+  height: 44px;
+}
+
+.services .service-item:hover #servico-6 {
+  content: url("../img/tteo/atendimento_roxo.png");
 }
 
 .services .service-item .icon i {
