@@ -38,7 +38,7 @@
 :root {
   --background-color: #ffffff;
   /* Background color for the entire website, including individual sections */
-  --default-color: #444444;
+  --default-color: #252525;
   /* Default color used for the majority of the text content across the entire website */
   --heading-color: #191919;
   /* Color for headings, subheadings and title throughout the website */
@@ -71,6 +71,10 @@
 .light-background {
   --background-color: #f6f6f6;
   --surface-color: #ffffff;
+}
+
+.swiper-background {
+  --background-color: #b6b6b6;
 }
 
 .dark-background {
@@ -1047,6 +1051,7 @@ section,
 .cards .card {
   background-color: var(--surface-color);
   color: var(--default-color);
+  font-weight: 500;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   padding: 40px;
   margin: -1px;
@@ -1056,7 +1061,7 @@ section,
 .cards .card span {
   display: block;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 100;
   color: var(--accent-color);
 }
 
@@ -1069,8 +1074,9 @@ section,
 }
 
 .cards .card p {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
   font-size: 15px;
+
   margin: 0;
   padding: 0;
 }
@@ -1087,16 +1093,43 @@ section,
 }
 
 .clients .swiper-wrapper {
+  padding-left: 3%;
   height: auto;
 }
 
-.clients .swiper-slide img {
+.clients .swiper-slide {
+  width: 10%;
+}
+
+.clients .swiper-slide .count-box {
+  width: 90%;
+  height: 150px;
+  justify-items: center;
+  align-content: center;
+  background-color: white;
+  border-radius: 30px;
   transition: 0.3s;
 }
 
-.clients .swiper-slide img:hover {
+.clients .swiper-slide .count-box img {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.clients .swiper-slide p {
+  text-align: center;
+  margin: auto;
+  padding-bottom: 5px;
+  font-size: 24px;
+  color: var(--default-color);
+}
+
+.clients .swiper-slide .count-box:hover {
   transform: scale(1.1);
 }
+
+
 
 /*--------------------------------------------------------------
 # Services Section
@@ -1109,6 +1142,11 @@ section,
   transition: all ease-in-out 0.3s;
   height: 100%;
 }
+
+.tteo-destacado {
+  color: var(--accent-color);
+}
+
 
 .services .service-item .icon {
   margin: 0 auto;
@@ -1130,7 +1168,7 @@ section,
 }
 
 .services .service-item:hover #servico-1 {
-  content: url("../img/tteo/software_roxo.png");
+  content: url("../img/tteo/icons/software_roxo.png");
 }
 
 .services .service-item #servico-2 {
@@ -1139,7 +1177,7 @@ section,
 }
 
 .services .service-item:hover #servico-2 {
-  content: url("../img/tteo/phone_roxo.png");
+  content: url("../img/tteo/icons/phone_roxo.png");
 }
 
 .services .service-item #servico-3 {
@@ -1149,11 +1187,11 @@ section,
 
 .services .service-item:hover #servico-3 {
 
-  content: url("../img/tteo/refactoring_roxo.png");
+  content: url("../img/tteo/icons/refactoring_roxo.png");
 }
 
 .services .service-item:hover #servico-4 {
-  content: url("../img/tteo/suporte_roxo.png");
+  content: url("../img/tteo/icons/suporte_roxo.png");
 }
 
 .services .service-item #servico-5 {
@@ -1162,7 +1200,7 @@ section,
 }
 
 .services .service-item:hover #servico-5 {
-  content: url("../img/tteo/seo_roxo.png");
+  content: url("../img/tteo/icons/seo_roxo.png");
 }
 
 .services .service-item #servico-6 {
@@ -1171,7 +1209,7 @@ section,
 }
 
 .services .service-item:hover #servico-6 {
-  content: url("../img/tteo/atendimento_roxo.png");
+  content: url("../img/tteo/icons/atendimento_roxo.png");
 }
 
 .services .service-item .icon i {

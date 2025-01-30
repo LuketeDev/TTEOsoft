@@ -50,7 +50,8 @@
           <i class="bi bi-phone d-flex align-items-center ms-4"><span>+55 (62) 99855-1924</span></i>
         </div>
         <div class="social-links d-none d-md-flex align-items-center">
-          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.instagram.com/tteosoft/" class="instagram" target="_blank" rel="external"><i
+              class="bi bi-instagram"></i></a>
           <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
         </div>
       </div>
@@ -66,7 +67,7 @@
             .logo-header {
               width: auto;
               height: 100px;
-              padding: 10px 0 10px 0;
+              padding: 10px 0 10px 20px;
             }
 
             .sitename {
@@ -119,15 +120,17 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-
-      <img src="assets/img/tteo/hero_br_tteo_2.jpg" alt="" data-aos="fade-in">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="assets/img/tteo/background/fundo_predio_1.jpg">
+        <img src="assets/img/tteo/background/fundo_1.jpg" alt="" data-aos="fade-in">
+      </picture>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-start">
           <div class="col-lg-8">
             <h2>Bem-vindo à TTEO Soft</h2>
 
-            <p><!---->Somos um time muito legal</p>
+            <p><!---->Transformando ideias em código e inovações em realidade.</p>
             <a href="#about" class="btn-get-started">Começar</a>
           </div>
         </div>
@@ -200,8 +203,8 @@
           <div class="col-lg-3 col-md-4 card" data-aos="fade-up" data-aos-delay="100">
             <span class="card-negrito">01</span>
             <h4>Software Personalizado</h4>
-            <p>Criamos soluções personalizadas, tanto para ambiente web quanto mobile, voltadas para a melhoria de
-              processos e o desempenho das equipes de nossos clientes. Atendemos empresas de pequeno, médio e grande
+            <p>Criamos soluções personalizadas, para ambientes web e mobile, voltadas para a melhoria de
+              processos e do desempenho das equipes de nossos clientes. Atendemos empresas de pequeno, médio e grande
               porte.</p>
           </div><!-- End Card Item -->
 
@@ -209,7 +212,7 @@
             <span class="card-negrito">02</span>
             <h4>Consultoria</h4>
             <p>A consultoria em software é a chave para revelar o verdadeiro potencial dos seus processos corporativos,
-              aumentar a produtividade e garantir inovação constante, utilizando as melhores práticas de metodologias
+              aumentar a produtividade e garantir inovação constante, usando as melhores práticas de metodologias
               ágeis.
             </p>
           </div><!-- End Card Item -->
@@ -217,7 +220,7 @@
           <div class="col-lg-3 col-md-4 card" data-aos="fade-up" data-aos-delay="300">
             <span class="card-negrito">03</span>
             <h4>Soluções Mobile</h4>
-            <p>Aplicativos inovadores estão em constante desenvolvimento. Aqui, criamos soluções personalizadas para as
+            <p>Aplicativos inovadores estão em constante desenvolvimento! Aqui, criamos soluções personalizadas para as
               plataformas iOS e Android, atendendo às necessidades específicas do seu negócio. Mobilidade, acesso à
               informação e comunicação são nossos pilares.</p>
           </div><!-- End Card Item -->
@@ -253,9 +256,8 @@
     <section id="clients" class="clients section light-background">
 
       <div class="container">
-        
         <div class="swiper init-swiper">
-          <!--TODO Alterar "992" quando tiver mais produtos -->
+          <!--TODO Alterar quando tiver mais produtos -->
           <script type="application/json" class="swiper-config">
             {
               "loop": true,
@@ -264,48 +266,78 @@
                 "delay": 4000
               },
               "slidesPerView": "auto",
+              "spaceBetween": 30,
               "pagination": {
                 "el": ".swiper-pagination",
                 "type": "bullets",
                 "clickable": true
               },
               "breakpoints": {
-                "320": {
-                  "slidesPerView": 2,
-                  "spaceBetween": 40
-                },
-                "480": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 60
-                },
-                "640": {
-                  "slidesPerView": 4,
-                  "spaceBetween": 80
-                },
-                "992": {
+                "0": {
                   "slidesPerView": 1,
-                  "spaceBetween": 100
+                  "spaceBetween": 30
+                },
+                "770": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 30
+                },
+                "920": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 30
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 30
                 }
               }
             }
-          </script>
+            </script>
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/tteo/parceiros/LOGO_PEDIZZO.png" class="img-fluid" alt=""
-                style="height: 96px; width: 230px;">
+            <div class="swiper-slide">
+              <div class="col-lg-9 col-md-6">
+                <div class="count-box">
+                  <i class="icofont-brand-microsoft"></i>
+                  <p>BackEnd</p>
+                  <img src="assets/img/tteo/icons/icons_backend.png" class="icones-tecnologias" alt="icones backend">
+                </div>
+              </div>
             </div>
-            <div class="swiper-slide"><img src="assets/img/tteo/parceiros/LOGO_TTEOFIT.png" class="img-fluid" alt="">
+            <div class="swiper-slide">
+              <div class="col-lg-9 col-md-6">
+                <div class="count-box">
+                  <p>Banco de Dados</p>
+                  <img src="assets/img/tteo/icons/icones_db.png" class="icones-tecnologias" alt="icones banco de dados">
+                </div>
+              </div>
             </div>
-            <!-- <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div> -->
+            <div class="swiper-slide">
+              <div class="col-lg-9 col-md-6">
+                <div class="count-box">
+                  <p>FrontEnd</p>
+                  <img src="assets/img/tteo/icons/icons_frontend.png" class="icones-tecnologias" alt="icones frontend">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="col-lg-9 col-md-6">
+                <div class="count-box">
+                  <p>Mobile</p>
+                  <img src="assets/img/tteo/icons/icons_mobile.png" class="icones-tecnologias" alt="icones mobile">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="col-lg-9 col-md-6">
+                <div class="count-box">
+                  <p>Diversas</p>
+                  <img src="assets/img/tteo/icons/icons_diversas (2).png" class="icones-tecnologias"
+                    alt="icones diversas">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
       </div>
-
     </section><!-- /Clients Section -->
 
     <!-- Services Section -->
@@ -313,9 +345,12 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <span>Serviços</span>
+        <span class="span-default">Serviços</span>
         <h2>Serviços</h2>
-        <p>A TTEO Soft atua como uma Fábrica de Software, desenvolvendo soluções 100% personalizadas. Você idealiza, nós
+        <p style="max-width: 80%; margin: auto;">A <strong style="color: #6f4da1;">TTEO soft</strong>
+          atua como uma
+          Fábrica de Software, desenvolvendo soluções
+          100% personalizadas. Você idealiza, nós
           concretizamos! Tudo isso com base em uma relação sólida de confiança e parceria duradoura com clientes e
           colaboradores. </p>
       </div><!-- End Section Title -->
@@ -327,7 +362,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item  position-relative">
               <div class="icon">
-                <img src="assets/img/tteo/software_branco.png" alt="" class="card-image-icon" id="servico-1">
+                <img src="assets/img/tteo/icons/software_branco.png" alt="" class="card-image-icon" id="servico-1">
               </div>
               <a href="#" class="stretched-link">
                 <h3>Fábrica de Software</h3>
@@ -340,7 +375,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
               <div class="icon">
-                <img src="assets/img/tteo/phone_branco.png" alt="" class="card-image-icon" id="servico-2">
+                <img src="assets/img/tteo/icons/phone_branco.png" alt="" class="card-image-icon" id="servico-2">
               </div>
               <a href="#" class="stretched-link">
                 <h3>Aplicativos Mobile</h3>
@@ -354,7 +389,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
               <div class="icon">
-                <img src="assets/img/tteo/refactoring_branco.png" alt="" class="card-image-icon" id="servico-3">
+                <img src="assets/img/tteo/icons/refactoring_branco.png" alt="" class="card-image-icon" id="servico-3">
               </div>
               <a href="#" class="stretched-link">
                 <h3>Refatoração</h3>
@@ -367,7 +402,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item position-relative">
               <div class="icon">
-                <img src="assets/img/tteo/suporte_branco.png" alt="" class="card-image-icon" id="servico-4">
+                <img src="assets/img/tteo/icons/suporte_branco.png" alt="" class="card-image-icon" id="servico-4">
               </div>
               <a href="#" class="stretched-link">
                 <h3>Manutenção de Software</h3>
@@ -381,7 +416,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-item position-relative">
               <div class="icon">
-                <img src="assets/img/tteo/seo_branco.png" alt="" class="card-image-icon" id="servico-5">
+                <img src="assets/img/tteo/icons/seo_branco.png" alt="" class="card-image-icon" id="servico-5">
               </div>
               <a href="#" class="stretched-link">
                 <h3>SEO para Website</h3>
@@ -396,7 +431,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-item position-relative">
               <div class="icon">
-                <img src="assets/img/tteo/atendimento_branco.png" alt="" class="card-image-icon" id="servico-6">
+                <img src="assets/img/tteo/icons/atendimento_branco.png" alt="" class="card-image-icon" id="servico-6">
               </div>
               <a href="#" class="stretched-link">
                 <h3>Suporte</h3>
@@ -416,14 +451,14 @@
     <!-- Call To Action Section -->
     <section id="call-to-action" class="call-to-action section dark-background">
 
-      <img src="assets/img/cta-bg.jpg" alt="">
+      <img src="assets/img/tteo/background/Jörg Dickmann - Galaxy Soho (2).jpg" alt="">
 
       <div class="container">
         <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
           <div class="col-xl-10">
             <div class="text-center">
               <h3>Contatar</h3>
-              <p>Precisando de ajuda? Entre em contato com a nossa equpe!</p>
+              <p>Precisando de ajuda? Entre em contato com a nossa equipe!</p>
               <a class="cta-btn" href="#">Contatar</a>
             </div>
           </div>
@@ -578,14 +613,12 @@
     </section>/Portfolio Section -->
 
     <!-- Pricing Section -->
-    <section id="pricing" class="pricing section">
-
-      <!-- Section Title -->
+    <!-- <section id="pricing" class="pricing section">
       <div class="container section-title" data-aos="fade-up">
-        <span>Pricing</span>
-        <h2>Pricing</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+        <span>Preços</span>
+        <h2>Preços</h2>
+        <p>Confira os preços dos nossos serviços</p>
+      </div>
 
       <div class="container">
 
@@ -604,7 +637,7 @@
               </ul>
               <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
             </div>
-          </div><!-- End Pricing Item -->
+          </div>
 
           <div class="col-lg-4 featured" data-aos="zoom-in" data-aos-delay="200">
             <div class="pricing-item">
@@ -619,7 +652,7 @@
               </ul>
               <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
             </div>
-          </div><!-- End Pricing Item -->
+          </div>
 
           <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="pricing-item">
@@ -634,13 +667,13 @@
               </ul>
               <div class="text-center"><a href="#" class="buy-btn">Buy Now</a></div>
             </div>
-          </div><!-- End Pricing Item -->
+          </div>
 
         </div>
 
       </div>
 
-    </section><!-- /Pricing Section -->
+    </section>/Pricing Section -->
 
     <!-- Team Section -->
     <section id="team" class="team section">
@@ -658,17 +691,18 @@
 
           <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
-              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+              <img src="assets/img/tteo/equipe/Lukete.jpg" class="img-fluid" alt="">
               <div class="member-content">
                 <h4>Lucas Almeida</h4>
-                <span>Web Development</span>
+                <span>Desenvolvimento Web</span>
                 <p>
-                  Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut
-                  aut aut
+                  O melhorzin que tá tendo!
                 </p>
                 <div class="social">
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.instagram.com/lucas.bjj._" target="_blank" rel="external"><i
+                      class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/lukete-sesi/" target="_blank" rel="external"><i
+                      class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -813,7 +847,8 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6">
           <div class="footer-about">
-            <a href="index.html" class="logo sitename">TTEOsoft</a>
+            <a href="index.html" class="logo sitename" style="display: flex; justify-content: center;"><img
+                src="assets/img/tteo/icons/Logo_tteo_roxo_branco.png" alt="" style="max-width: 50%;"></a>
             <div class="footer-contact pt-3">
               <p>Rua Genipapo, n° sn, Qd 09</p>
               <p>LOTE 06 A, Centro.</p>
@@ -821,8 +856,7 @@
               <p><strong>Email:</strong> <span>tteosoft@gmail.com</span></p>
             </div>
             <div class="social-links d-flex mt-4">
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href="https://www.instagram.com/tteosoft/" target="_blank"><i class="bi bi-instagram"></i></a>
               <a href=""><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
@@ -831,9 +865,9 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Links úteis</h4>
           <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Sobre nós</a></li>
-            <li><a href="#">Serviços</a></li>
+            <li><a href="#hero">Início</a></li>
+            <li><a href="#about">Sobre nós</a></li>
+            <li><a href="#services">Serviços</a></li>
             <li><a href="#">Termos de uso</a></li>
             <li><a href="#">Política de privacidade</a></li>
           </ul>
@@ -870,7 +904,7 @@
         <span>Todos os direitos
           reservados</span>
       </p>
-      <img src="../Day/assets/img/tteo/Artboard 1 copy 8@4x (1).png" alt="" id="img-pequena">
+      <img src="assets/img/tteo/Artboard 1 copy 8@4x (1).png" alt="" id="img-pequena">
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
@@ -883,7 +917,7 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+  <a href="#hero" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
