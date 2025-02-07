@@ -260,6 +260,7 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Desktop Navigation */
+
 @media (min-width: 1200px) {
   .navmenu {
     padding: 0;
@@ -292,6 +293,21 @@ h6 {
     transition: 0.3s;
   }
 
+  #area-logada,
+  #area-logada:focus {
+    color: var(--nav-color);
+    padding: 20px 15px;
+    margin-left: 0px;
+    font-size: 16px;
+    font-family: var(--nav-font);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+
   .navmenu a i,
   .navmenu a:focus i {
     font-size: 12px;
@@ -303,6 +319,11 @@ h6 {
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
+    color: var(--contrast-color);
+    background-color: var(--nav-hover-color);
+  }
+
+  #area-logada:hover {
     color: var(--contrast-color);
     background-color: var(--nav-hover-color);
   }
@@ -365,6 +386,7 @@ h6 {
   }
 }
 
+
 /* Mobile Navigation */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
@@ -410,6 +432,21 @@ h6 {
     transition: 0.3s;
   }
 
+  #area-logada,
+  #area-logada:focus {
+    color: var(--nav-color);
+    padding: 20px 15px;
+    margin-left: 0px;
+    font-size: 16px;
+    font-family: var(--nav-font);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+
   .navmenu a i,
   .navmenu a:focus i {
     font-size: 12px;
@@ -431,11 +468,17 @@ h6 {
     color: var(--contrast-color);
   }
 
+  #area-logada:hover {
+    color: var(--contrast-color);
+    background-color: var(--nav-hover-color);
+  }
+
   .navmenu a:hover,
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-dropdown-hover-color);
   }
+
 
   .navmenu .active i,
   .navmenu .active:focus i {
@@ -489,6 +532,7 @@ h6 {
     display: block;
   }
 }
+
 
 /* Listing Dropdown - Desktop */
 @media (min-width: 1200px) {
@@ -1082,26 +1126,26 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Clients Section
+# tecnologias Section
 --------------------------------------------------------------*/
-.clients {
+.tecnologias {
   padding: 15px 0;
 }
 
-.clients .swiper {
+.tecnologias .swiper {
   padding: 10px 0;
 }
 
-.clients .swiper-wrapper {
+.tecnologias .swiper-wrapper {
   padding-left: 3%;
   height: auto;
 }
 
-.clients .swiper-slide {
+.tecnologias .swiper-slide {
   width: 10%;
 }
 
-.clients .swiper-slide .count-box {
+.tecnologias .swiper-slide .count-box {
   width: 90%;
   height: 150px;
   justify-items: center;
@@ -1111,13 +1155,13 @@ section,
   transition: 0.3s;
 }
 
-.clients .swiper-slide .count-box img {
+.tecnologias .swiper-slide .count-box img {
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;
 }
 
-.clients .swiper-slide p {
+.tecnologias .swiper-slide p {
   text-align: center;
   margin: auto;
   padding-bottom: 5px;
@@ -1125,7 +1169,7 @@ section,
   color: var(--default-color);
 }
 
-.clients .swiper-slide .count-box:hover {
+.tecnologias .swiper-slide .count-box:hover {
   transform: scale(1.1);
 }
 
